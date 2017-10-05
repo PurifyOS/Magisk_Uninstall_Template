@@ -40,7 +40,7 @@ print_modname() {
 #
 # - "wipe_data, this create a openrecoveryscript for wipe data and set reboot recovery after this flash
 # - "wipe_cache, this create a openrecoveryscript for wipe cache and set reboot recovery after this flash
-# - "wipe_dalwik, this create a openrecoveryscript for wipe dalvik-cache and set reboot recovery after this flash
+# - "wipe_dalvik, this create a openrecoveryscript for wipe dalvik-cache and set reboot recovery after this flash
 #
 # You can use the variable $API for Android API version and variable $ARCH for CPU architecture
 shellun() {
