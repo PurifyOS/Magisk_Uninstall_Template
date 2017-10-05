@@ -56,21 +56,22 @@ require_new_magisk() {
 uninstall() {
   UNPATH=$MOUNTPATH/$1
   rm -rf $UNPATH
+  $BOOTMODE && touch remove /magisk/$1
 }
 
 wipe_data() {
   echo "wipe data" >> $ORS
-  RECOVERY_REBOOT=TRUE
+  RECOVERY_REBOOT=true
 }
 
 wipe_cache() {
   echo "wipe cache" >> $ORS
-  RECOVERY_REBOOT=TRUE
+  RECOVERY_REBOOT=true
 }
 
 wipe_dalvik() {
   echo "wipe dalvik" >> $ORS
-  RECOVERY_REBOOT=TRUE
+  RECOVERY_REBOOT=true
 }
 
 rebootto() {
